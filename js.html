@@ -1,0 +1,114 @@
+# Semantic-Bits
+<html>
+<head>
+<title>javascript basics</title>    
+    <link href="js2.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+    <h1>JAVASCRIPT     &nbsp;    &nbsp;    Learning from the basics!!!!!</h1>
+     <!--true/false-->   <p id="demo"></p>
+        
+    <!--object-->   
+    <p id="demmo"></p>
+    <!--8.9e-->    <p id="demmmo"></p>
+        <p id="man"></p>
+        <p id="fruit"></p>
+  <!--time-->      <p id="aas"></p>
+        
+
+        <script>
+            //.............................................................
+        var a=5;
+            var b=8;
+            var c=8;
+            var person={
+                firstname:"Aastha",
+                lastname:"solanki",
+                age:21
+            };
+            document.getElementById("demo").innerHTML=(b==c)+"<br>"+(a==b);
+        
+                document.getElementById("demmo").innerHTML= person.firstname + "&nbsp;" + person.lastname+ "&nbsp;" +"is"+ "&nbsp;"+ person.age + "&nbsp;" +"years old."+ "//used object";
+        function myfunction(e,w)
+            {
+                return e * w;
+            }
+            document.getElementById("demmmo").innerHTML=myfunction(6,7);
+       var x=8.90;
+            document.getElementById("man").innerHTML=x.toExponential()+"<br>" + x.toExponential(2)+"<br>"+ x.toExponential(4);
+        var fruits,x,i,y;
+            fruits=["banana","orange","apple","mango"];
+            x=fruits.length;
+            y= "<ul>" ;
+            for(i=0; i<x; i++)
+                {
+                    y += "<li>" +fruits[i]+ "</li>";
+                }
+            y+="<ul>";
+            document.getElementById("fruit").innerHTML=y;
+        </script>
+        <button onclick="document.getElementById("aas").innerHTML=Date()">Time is:</button>
+       <!-- //list of fruits using an array-->
+        <br><br>
+        //Let's try push and pull in an array
+        <br><br>
+        <p id="car"></p>
+        <script>
+            //-----------------------------------------------------------------------------------------------------------------------------------
+            
+        var cars=["maruti","swift","polo","duster"];
+            document.getElementById("car").innerHTML=cars;
+            function carr(){
+                cars.push("Honda city");
+                document.getElementById("car").innerHTML=cars;
+            }
+            
+        </script>
+        <button onclick="carr()">Click this</button>
+        <form>
+            <fieldset>
+                <h4>First Name:</h4><input type="text" name="fname" method="post" required>
+            <h4>Last name:</h4><input type="text" name="lname" required>
+            <h4>Address:</h4><textarea name="message" rows="8" columns="10" required></textarea><br><br>
+           <input id="id1" type=number min="20" max="32" required>
+            <button onclick="scriptt()">Age</button>   
+                <button type="submit">SUBMIT</button> 
+            </fieldset> 
+        </form>
+<script>
+        function scriptt()
+    {
+        var z=document.getElementById("id1");
+        if(!z.checkValidity()){
+            alert("z.validationMessage");
+        }
+        else{
+            alert("Input OK")
+        }
+    }
+    function scripttt()
+    {
+        var zz= " ";
+        if(document.getElementById("id2")).validity.rangeUnderflow){
+            alert("zz.validationMessage");
+        }
+        else
+        {
+            alert("Input is Okay");
+        }
+  }
+        
+</script>
+        <input id="id2" type="number" min="100">
+        <button onclick="scripttt()" required>checkkkkkkkk</button>
+   ................................................................
+   <br>
+        
+        //Animation
+        <br>
+        <div></div>
+        
+    
+    
+    </body>
+</html>
