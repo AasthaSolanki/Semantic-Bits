@@ -1,0 +1,30 @@
+# Semantic-Bits
+body{
+    background-color: bisque;
+    border: black solid 5px;
+    margin:20px;
+    padding:20px;
+}
+h1{
+    color=navy;
+    font-family: cursive;
+    font-style: italic;
+    margin-left:30px;
+}
+div{
+    width: 100px;
+    height:100px;
+    background:red;
+    position:relative;
+    animation: myy 5s 5;
+}
+@-webkit-keyframes myy{
+    from{
+        left:0px;
+    }
+    to
+    {
+        left:500px;
+        
+    }
+}
